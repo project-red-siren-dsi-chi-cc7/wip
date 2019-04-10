@@ -1,4 +1,4 @@
 # wip
 Repo for our amazing work!
 
-###### This is going to be great!
+Lance's Super cool edit (-.-)
