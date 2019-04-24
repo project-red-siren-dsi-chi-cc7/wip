@@ -1,8 +1,13 @@
-# wip
-Repo for our amazing work!
+- Creators
 
-Lance's Super cool edit (-.-)
+- Problem Statement
 
-LALALALA
+- Dictionary
 
-Tadadadadada
+- Executive Summary
+
+- Future iterations/ next steps
+
+- Known issues
+
+- Sources
