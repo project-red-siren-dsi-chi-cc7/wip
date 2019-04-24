@@ -11,4 +11,3 @@
 - Known issues
 
 - Sources
-
