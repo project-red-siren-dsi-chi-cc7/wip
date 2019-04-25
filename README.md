@@ -14,12 +14,14 @@
 
 ## Problem Statement
 
-*After this lesson, students will be able to:*
 
-1. Identify the Markov property.
-2. Describe Monte Carlo simulations.
-3. Describe how MCMC works.
-4. Identify situations where MCMC is beneficial.
+**Problem 10: Using live police radio reports for real time identification of people needing assistance.**
+
+*Problem Statement:* Currently, FEMA identifies areas that require immediate attention (for search and rescue efforts) either by responding to reports and requests put directly by the public or, recently, using social media posts. This tool will utilize live police radio reports to identify hot spots representing locations of people who need immediate attention. The tool will flag neighborhoods or specific streets where the police and first-respondents were called to provide assistance related to the event.
+
+#### Questions of Interest to this project
+Is it possible to train a model to predict an emergency with a 95% or better accuracy?  
+Can any meaningful data related to addresses be gotten from live audio feed?
 
 ---
 
@@ -43,17 +45,52 @@
 
 ## Executive Summary
 
+“To know even one life has breathed easier because you have lived. This is to have succeeded.” – Ralph Waldo Emerson
+
+"Prepared. Responsive. Committed." - FEMA Motto
+
+*The executive summary needs to be persuasive and highlight the benefits of your company/product/service, rather than being descriptive and focusing on the features. You can save the features for the body of the proposal.*
+
+*The Opener: Capture their attention*
+
+August 29, 2005, Hurrican Katrina slams into the shores of the United States, leaving a wake of devastation.  To compound the issue, poorly constructed levees along the shores of Louisiana give way to rising water, and entire sections of the city of New Orleans are left under water.  Sadly, as rain falls and water levels rise, hundreds of people loose there lives.  
+
+During this tragic event, emergency responders were left with the task of attending to would be victims, while simultaneously struggling to find those who needed assistance.  Project Red Siren successfully lays the foundation needed to expand the resources available to FEMA when attempting to find people needing immediate assistance.  It specifically addresses the question, is this radio chatter from first responders and dispatchers an emergency?  While this question is not deep enough on its own to answer the full problem statement, the model produced is quite accurate, making it a solid starting point for further investigations.
+
+To be precise, the model uses various properties of sound waves to isolate tones, inflections, and other parts of speech that become more pronounced when people are put under stress or duress.  Yes, they are emergency responders and dispatchers, trained to keep their composure in tough situations.  This fact is one of the most remarkable things about the model Project Red Siren has produced.  The differences, although subtle, are nevertheless present; and the precision of the computer makes exposing them possible.
+
+*The Call to Action: Let’s do it*
+
+*Don't do this*
+ - Don’t make it too long
+ - Don’t use jargon
+ - Don’t use overly technical language
+ - Don’t talk about your company history
+ 
+*Do this*
+ - Do focus on your client
+ - Do mention your client’s company name
+ - Do use plain language
+ - Do proofread and edit
+
+
 ---
 
 <a id='next-steps'></a>
 
 ## Future iterations/next steps
 
+During Project Red Siren, several challenges were revealed, which are now considered.  First, and most pronounced, is the fact that the model is not now producing any address information.  There are two big hurdles in this domain, that of the inconsistencies involved with how addresses are communicated, and also the ability to obtain clear enough streaming audio to get meaningful text extraction.  In the former, some work was done.  We refer to the [Proof of concept](https://github.com/project-red-siren-dsi-chi-cc7/deliverables/blob/master/Proof%20of%20concept.ipynb) notebook, which outlines in more detail a potential larger workflow useful in tackling the main problem.  
+
+A few highlights of the aforementioned proposed workflow.  It incorporates criterion to address the question, how much text data should the machine store when receiving text from live audio?  It also incorporates deep learning into its scope, and briefly mentions the importance of periodic updating of the model to maintain training data on recent new incoming data.
+
 ---
 
 <a id='known-issues'></a>
 
 ## Known Issues
+
+One noteworthly challenge, there are many features which [LibRosa](https://librosa.github.io/librosa/index.html), the primary tool used to create visuals from the sound, can take measurements on and return.  These can get a bit technical.  Please see [EDA_and_modeling](https://github.com/project-red-siren-dsi-chi-cc7/deliverables/blob/master/EDA_and_modeling.ipynb#Audio-features) for a more thorough consideration of the features from LiBrosa.  
 
 ---
 
